@@ -1,3 +1,6 @@
-.title {
+body {
+      font-family: 'Roboto', sans-serif;
+}
+.main-content__title, .logo {
       font-family: 'PT Serif', serif;
 }
