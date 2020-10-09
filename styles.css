@@ -11,7 +11,6 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 95px;
 }
 
 .logo,.menu {
@@ -24,12 +23,12 @@ body {
   line-height: 32px;
   position: relative;
   padding: 40px 0;
-  padding-left: 44px;
+  padding-left: 48px;
 }
 
 .logo__circle {
   position: absolute;
-  left: 0;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
   width: 28px;
@@ -42,7 +41,7 @@ body {
 }
 
 .logo__circle_color_blue {
-  left: 8px;
+  left: 12px;
   top: 56%;
   background: #c8dbfb;
   opacity: .7;
@@ -56,15 +55,15 @@ body {
 .menu__item {
   position: relative;
   margin-right: 26px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 21px;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
 }
 
 .menu__item:last-child {
-  margin-right: 0;
+  margin-right: 13px;
 }
 
 .menu__item::after {
@@ -89,15 +88,15 @@ body {
 }
 
 .main {
-  padding: 0 63% 100px 0;
-  background: top right no-repeat url('img/mainimg.svg');
+  padding: 205px 63% 269px 0;
+  background: center right no-repeat url('img/mainimg.svg');
 }
 
 .main__title {
-  margin: 0 0 38px 0;
+  margin: 0 0 37px 0;
   font-family: 'PT Serif', serif;
-  font-size: 50px;
-  line-height: 66px;
+  font-size: 66px;
+  line-height: 87px;
 }
 
 .main__title-text_highlight {
@@ -105,18 +104,18 @@ body {
 }
 
 .main__subtitle {
-  margin: 0 0 41px 0;
-  font-size: 18px;
-  line-height: 21px;
+  margin: 0 0 40px 0;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .main__button {
   display: inline-block;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 21px;
   color: #fff;
   background: #0056ec;
-  padding: 14px 16px;
+  padding: 18px 29px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
