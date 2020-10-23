@@ -28,9 +28,9 @@ body {
 
 .logo__circle {
   position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 4px;
+  top: 49%;
+  transform: translateY(-53%);
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -42,7 +42,7 @@ body {
 
 .logo__circle_color_blue {
   left: 12px;
-  top: 56%;
+  top: 57%;
   background: #c8dbfb;
   opacity: .7;
 }
@@ -104,7 +104,9 @@ body {
 }
 
 .main__subtitle {
+
   margin: 0 0 40px 0;
+  max-width: 75%;
   font-size: 22px;
   line-height: 26px;
 }
@@ -118,9 +120,217 @@ body {
   padding: 18px 29px;
   text-decoration: none;
   border-radius: 4px;
-  transition: opacity .5s;
+  animation: pulse 2s infinite;
 }
 
 .main__button:hover {
   opacity: .5;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(55, 141, 250, .8);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(55, 141, 250, 0);
+  }
+}
+
+#checkbox {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: auto;
+    width: 100%;
+  }
+
+  .header {
+    margin-bottom: 2%;
+  }
+
+  .menu,
+  .logo__text {
+    display: none;
+  }
+
+  .menu__item_active::after {
+    opacity: 0;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 69% 25px 0;
+    background-size: 75%;
+    background-position: top center;
+  }
+
+  .main__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+  .main__subtitle {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+  }
+
+  .main__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 20px;
+  }
+
+  .hamburger__menu {
+    display: flex;
+    width: 25px;
+    padding-top: 4px;
+    border-bottom: 3px solid #0056ec;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    margin: 28px 23px 0 0;
+    z-index: 20;
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    display: flex;
+    position: relative;
+    content: "";
+    border-bottom: 3px solid #0056ec;
+    padding-bottom: 4px;
+  }
+
+  #checkbox:checked ~ label .hamburger::before {
+    transform: rotate(45deg);
+    top: 7px;
+  }
+
+  #checkbox:checked ~ label .hamburger::after {
+    transform: rotate(-45deg);
+    top: -4px;
+    right: 3px;
+  }
+
+  #checkbox:checked ~ label .hamburger__menu {
+    border: none;
+  }
+
+  #checkbox:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: white;
+    padding-top: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+
+  #checkbox:checked ~ .menu .menu__item {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 42px;
+  }
+
+  .menu {
+    padding-right: 35px;
+    padding-top: 10px;
+  }
+
+  .menu__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main {
+    padding: 100px 45% 200px 46px;
+    background: top 82px right 47px no-repeat url('img/mainimgn.svg');
+  }
+
+  .main__title {
+    margin: 0 0 38px 0;
+    font-size: 50px;
+    line-height: 66px;
+  }
+
+  .main__subtitle {
+    margin: 0 0 41px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .main__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 21px;
+   }
+}
+
+@media (min-width: 1300px) and (max-width: 1500px) {
+  .wrapper {
+    width: 75%;
+  }
+
+  .logo {
+    margin-left: 45px;
+  }
+
+  .menu {
+    padding-right: 40px;
+    padding-top: 10px;
+  }
+
+  .menu__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main {
+    padding: 100px 45% 200px 46px;
+    background: top 82px right 47px no-repeat url('img/mainimgn.svg');
+  }
+
+  .main__title {
+    margin: 0 0 38px 0;
+    font-size: 50px;
+    line-height: 66px;
+  }
+
+  .main__subtitle {
+    margin: 0 0 41px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .main__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 21px;
+   }
 }
