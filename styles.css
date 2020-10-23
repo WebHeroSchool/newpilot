@@ -132,6 +132,7 @@ body {
   0% {
     box-shadow: 0 0 0 0 rgba(55, 141, 250, .8);
   }
+
   100% {
     box-shadow: 0 0 0 20px rgba(55, 141, 250, 0);
   }
@@ -246,7 +247,6 @@ body {
     margin-bottom: 24px;
     margin-right: 0;
   }
-
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
@@ -289,7 +289,7 @@ body {
     font-size: 14px;
     line-height: 16px;
     padding: 14px 21px;
-   }
+  }
 }
 
 @media (min-width: 1300px) and (max-width: 1500px) {
