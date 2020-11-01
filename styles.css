@@ -18,9 +18,7 @@ body {
 }
 
 .logo {
-  font-family: 'PT Serif', serif;
-  font-size: 24px;
-  line-height: 32px;
+  font: 24px/32px 'PT Serif', serif;
   position: relative;
   padding: 40px 0;
   padding-left: 48px;
@@ -94,9 +92,7 @@ body {
 
 .main__title {
   margin: 0 0 37px 0;
-  font-family: 'PT Serif', serif;
-  font-size: 66px;
-  line-height: 87px;
+  font: 66px/87px 'PT Serif', serif;
 }
 
 .main__title-text_highlight {
@@ -248,7 +244,46 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 999px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .menu {
+    padding-right: 35px;
+    padding-top: 10px;
+  }
+
+  .menu__item {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main {
+    padding: 40px 55% 100% 0;
+    background: top 4px right 5%/55% no-repeat url('img/mainimgn.svg');
+  }
+
+  .main__title {
+    margin: 0 0 28px 0;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .main__subtitle {
+    margin: 0 0 31px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .main__button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 21px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
   .wrapper {
     width: 100%;
   }
