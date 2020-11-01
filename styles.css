@@ -18,9 +18,7 @@ body {
 }
 
 .logo {
-  font-family: 'PT Serif', serif;
-  font-size: 24px;
-  line-height: 32px;
+  font: 24px/32px 'PT Serif', serif;
   position: relative;
   padding: 40px 0;
   padding-left: 48px;
@@ -94,9 +92,7 @@ body {
 
 .main__title {
   margin: 0 0 37px 0;
-  font-family: 'PT Serif', serif;
-  font-size: 66px;
-  line-height: 87px;
+  font: 66px/87px 'PT Serif', serif;
 }
 
 .main__title-text_highlight {
